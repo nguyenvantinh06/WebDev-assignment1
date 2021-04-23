@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 105px;
+    height: 55px;
+}
+
+.navbar-brand {
+    margin-left: 100px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
