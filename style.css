@@ -5,7 +5,7 @@ html, body {
 }
 
 .header {
-    height: 71px;
+    height: 70px;
 }
 
 .logo {
@@ -17,6 +17,7 @@ html, body {
     position: fixed !important;
     top:0;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -25,28 +26,27 @@ html, body {
     padding-bottom: 0 !important;
 }
 
-.background {
-    height: 65%;
-    overflow: hidden;
-    background: url("./img/bg.jpg") no-repeat fixed center;
-    background-size: cover;
+.content {
+    height: calc(100% - 70px);
 }
 
-.background .dark-layer {
-    background-color: rgba(0, 0, 0, 0.432);
-    /* opacity: 0.4; */
+.carousel {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.dark-layer h1 {
-    color: white;
-    font-size: 60px;
+.carousel .carousel-inner {
+    height: 100%;
 }
 
-.dark-layer p {
-    color: white;
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+  
+.carousel-item img {
+    height: 100%;
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    /* min-height: 300px; */
 }
