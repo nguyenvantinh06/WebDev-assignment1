@@ -17,3 +17,31 @@ html, body {
     margin-left: 40px;
     margin-right: 40px;
 }
+@keyframes contactrightmove{
+    from{ right: 0px;}
+    to{ right: 20px;}
+}
+
+@keyframes contactleftmove{
+    from{ left: 0px;}
+    to{ left: 20px;}
+}
+.slide {
+        animation-name: contactrightmove;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        position: absolute;
+        width: 100px;
+        height: 300px;
+        padding: 10px;
+}
+
+.slideamin {
+    animation-name: contactleftmove;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    padding: 10px;
+}
